@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: docs   # GitHub Pages sirve desde /docs en la rama main
+  resources:
+    # Los enlaces de descarga se generan en tiempo de render (list.files),
+    # no como referencia literal en el .qmd, así que Quarto no los detecta
+    # solo: hay que declarar cada carpeta de fuentes para que se copien al
+    # sitio publicado (docs/).
+    - "DATOS/ANUARIOS ESTADISTICOS DIPEC/*.pdf"
+    - "DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/*"
+    - "DATOS/NACIDOS VIVOS - SALUD/**/*"
+    - "DATOS/PROYECCIONES INDEC/*"
+    - "DATOS/RENAPER/*"
+
+website:
+  title: "Demanda Educativa Jujuy"
+  description: "Catálogo de fuentes y diagnóstico demográfico-educativo"
+  page-navigation: true
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Inicio
+  sidebar:
+    style: docked
+    search: true
+    contents: auto
+
+format:
+  html:
+    theme: cosmo
+    css: estilos.css
+    toc: true
+    toc-depth: 3
+    toc-title: "Contenidos"
+    toc-location: left
+    number-sections: true
+    df-print: kable
+    code-fold: true
+    code-tools: false
+    code-summary: "Mostrar código"
+    fig-align: center
+    embed-resources: false
+    grid:
+      sidebar-width: 260px
+      body-width: 950px
+      margin-width: 220px
+
+execute:
+  warning: false
+  message: false

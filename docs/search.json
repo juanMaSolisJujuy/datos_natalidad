@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "",
+    "text": "Este documento es un compilado provisorio de las fuentes de datos de nacimientos de la provincia de Jujuy (y sus departamentos) empleables para estimar la demanda educativa por nivel, relevadas a la fecha, y que están disponibles en catálogos y páginas oficiales. El mismo se enmarca en el Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy, desarrollado de manera conjunta entre la Dirección de Análisis Estratégico de Datos y Difusión de la Información Educativa (dependiente de la Subsecretaría de Información y Evaluación Educativa, Secretaría de Educación, ámbito nacional) y la Dirección de Planeamiento, Información y Evaluación Educativa (dependiente de la Secretaría de Planeamiento Estratégico del Ministerio de Educación de la Provincia de Jujuy).\nCada sección corresponde a una fuente o carpeta de datos, e incluye: metadata de la fuente y un enlace de descarga."
+  },
+  {
+    "objectID": "index.html#resumen",
+    "href": "index.html#resumen",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "",
+    "text": "Este documento es un compilado provisorio de las fuentes de datos de nacimientos de la provincia de Jujuy (y sus departamentos) empleables para estimar la demanda educativa por nivel, relevadas a la fecha, y que están disponibles en catálogos y páginas oficiales. El mismo se enmarca en el Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy, desarrollado de manera conjunta entre la Dirección de Análisis Estratégico de Datos y Difusión de la Información Educativa (dependiente de la Subsecretaría de Información y Evaluación Educativa, Secretaría de Educación, ámbito nacional) y la Dirección de Planeamiento, Información y Evaluación Educativa (dependiente de la Secretaría de Planeamiento Estratégico del Ministerio de Educación de la Provincia de Jujuy).\nCada sección corresponde a una fuente o carpeta de datos, e incluye: metadata de la fuente y un enlace de descarga."
+  },
+  {
+    "objectID": "index.html#anuarios-estadísticos-dipec",
+    "href": "index.html#anuarios-estadísticos-dipec",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "2 Anuarios Estadísticos DIPEC",
+    "text": "2 Anuarios Estadísticos DIPEC\n\n\n\nAnuarios Estadísticos DIPEC\n Organismo: Dirección Provincial de Estadística y Censos (Jujuy)  \nCobertura: Niveles de agregación para la variable 'nacidos vivos'\n1. Por departamento de residencia\n   - Total General\n   - Cochinoca\n   - El Carmen\n   - Dr. Manuel Belgrano\n   - Humahuaca\n   - Ledesma\n   - Palpalá\n   - Rinconada\n   - San Antonio\n   - San Pedro\n   - Santa Bárbara\n   - Santa Catalina\n   - Susques\n   - Tilcara\n   - Tumbaya\n   - Valle Grande\n   - Yavi\n   - Total Provincial\n   - Otras Provincias\n   - Otros Países\n2. Por sexo\n   - Mujeres\n   - Varones\n3. Por local de ocurrencia\n   - Establecimiento público\n   - Establecimiento privado\n   - Vivienda\n   - Otros\n4. Por grupos de edad de la madre\n   - 10 a 14\n   - 15 a 19\n   - 20 a 24\n   - 25 a 29\n   - 30 a 34\n   - 35 a 39\n   - 40 a 44\n   - 45 y más  \nVariables: Nacidos vivos  \nSitio de descarga: (https://dipec.jujuy.gob.ar/anuarios-estadisticos/) \n\n\n\n\nAnuario-Estadistico-2012-Jujuy.pdf\nAnuario-Estadistico-2013-Jujuy.pdf\nAnuario-Estadistico-2019-Jujuy.pdf\nAnuario-Estadistico-2020-Jujuy.pdf\nAnuario-Estadistico-2021-Jujuy.pdf\nAnuario-Estadistico-2022-Jujuy.pdf\nAnuario-Estadistico-2023-Jujuy.pdf\nAnuario-Estadistico-2024-Jujuy.pdf"
+  },
+  {
+    "objectID": "index.html#nacidos-vivos-argentina.gob.ar",
+    "href": "index.html#nacidos-vivos-argentina.gob.ar",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "3 Nacidos Vivos — Argentina.gob.ar",
+    "text": "3 Nacidos Vivos — Argentina.gob.ar\n\n\n\nNacidos Vivos — Argentina.gob.ar\n Organismo: Ministerio de Salud de la Nación, publicado en el Portal Nacional de Datos Públicos  \nCobertura: El organismo tiene 63 datasets publicados en el portal (categoría Salud). La cobertura\ntemporal y geográfica exacta depende del/los dataset(s) puntuales de nacidos vivos que se\ndescarguen del catálogo — revisar la ficha de cada dataset antes de importar.  \nVariables: Nacidos vivos y estadísticas vitales asociadas (variables específicas según el\ndataset elegido dentro del catálogo del organismo)  \nSitio de descarga: (https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos) \n\n\n\n\ndescnac.xlsx\nnacweb05.csv\nnacweb06.csv\nnacweb07.csv\nnacweb08.csv\nnacweb09.csv\nnacweb10.csv\nnacweb11.csv\nnacweb12.csv\nnacweb13.csv\nnacweb14.csv\nnacweb15.csv\nnacweb16.csv\nnacweb17.csv\nnacweb18.csv\nnacweb19.csv\nnacweb20_0.csv\nnacweb21_0.csv\nnacweb22_0.csv\nnacweb23.csv\nnacweb24.csv"
+  },
+  {
+    "objectID": "index.html#nacidos-vivos-salud",
+    "href": "index.html#nacidos-vivos-salud",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "4 Nacidos Vivos — Salud",
+    "text": "4 Nacidos Vivos — Salud\n\n\n\nNacidos Vivos — Estadísticas Vitales (DEIS)\n Organismo: Ministerio de Salud de la Nación — Dirección de Estadísticas e Información en Salud (DEIS)  \nCobertura: Anuario 'Estadísticas Vitales. Información Básica' (Serie 5), publicación anual desde\n1990. Desagregación habitual por jurisdicción de residencia de la madre (24 jurisdicciones,\nincluida Jujuy):\n- Edad de la madre\n- Nivel de instrucción de la madre\n- Intervalo de peso al nacer\n- Tiempo de gestación\n- Tipo de parto y sexo del nacido\n- Número de orden de nacido vivo\nÚltima edición disponible: Serie 5 N.º 67, Año 2023 (publicada en 2024).  \nVariables: Nacidos vivos registrados; indicadores de natalidad, mortalidad infantil y materna  \nSitio de descarga: (https://datos.salud.gob.ar/dataset?tags=nacidos+vivos) \n\n\n\n\nDEIS/serie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx\nDEIS/serie_5_nro_67_anuario_vitales_2023-version_final.pdf\nnacidos-vivos-registrados-en-la-republica-argentina-entre-los-anos-2005-2022.csv\nnacimientos2023.csv\nnacimientos2024-.csv\nserie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx"
+  },
+  {
+    "objectID": "index.html#proyecciones-indec",
+    "href": "index.html#proyecciones-indec",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "5 Proyecciones INDEC",
+    "text": "5 Proyecciones INDEC\n\n\n\nEstimaciones y Proyecciones de Población, por sexo y grupos de edad\n Organismo: Instituto Nacional de Estadística y Censos (INDEC)  \nCobertura: Serie Análisis Demográfico N.º 40 (2025), basada en el Censo Nacional de Población,\nHogares y Viviendas 2022. Estimaciones y proyecciones por jurisdicción (incluida Jujuy),\nsexo y grupos de edad, horizonte 2022-2040.  \nVariables: Población estimada/proyectada por sexo, edad simple/quinquenal y jurisdicción  \nSitio de descarga: (https://www.indec.gob.ar/ftp/cuadros/publicaciones/proyecciones_nacionales_2022_2040.pdf) \n\n\n\n\nbase_estimaciones_pob_deptos_2022_2035.csv\nestimaciones_departamentos_2022_2035.xlsx\nmetadatos_estimaciones_deptos_2022_2035.pdf\nproyecciones_nacionales_2022_2040.pdf"
+  },
+  {
+    "objectID": "index.html#renaper",
+    "href": "index.html#renaper",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "6 RENAPER",
+    "text": "6 RENAPER\n\n\n\nNacimientos en Argentina (RENAPER)\n Organismo: Registro Nacional de las Personas (RENAPER) — Dirección Nacional de Población  \nCobertura: Uno de los 27 datasets abiertos publicados por la Dirección Nacional de Población del\nRENAPER en datos.gob.ar (categoría 'Nacimientos en Argentina'). Cobertura temporal y\nnivel de desagregación (jurisdicción/año) a confirmar en la ficha del dataset descargado.  \nVariables: Nacimientos registrados a partir de la emisión de DNI, por jurisdicción y año  \nSitio de descarga: (https://www.argentina.gob.ar/interior/renaper/observatorio-poblacion/mapas-interactivos) \n\n\n\n\nNacimientos en Argentina por provincia y edad de la madre (2012 -2024).csv\nnacimientos_por_departamento_y_anio_2012_2022.csv\nnacimientos_por_departamento_y_anio_2012_2024.csv"
+  },
+  {
+    "objectID": "index.html#otras-fuentes-de-información-solicitadas",
+    "href": "index.html#otras-fuentes-de-información-solicitadas",
+    "title": "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy",
+    "section": "7 Otras fuentes de información solicitadas",
+    "text": "7 Otras fuentes de información solicitadas\n\nCantidad de Nacimientos mensuales en la provincia de Jujuy, desagregado por departamento/localidad, durante el período 2004 - 2026 (hasta el 30 de junio de 2026). Información solicitada a la Dirección Provincial de Registro Civil."
+  }
+]

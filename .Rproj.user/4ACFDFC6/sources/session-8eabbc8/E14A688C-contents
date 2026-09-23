@@ -1,0 +1,213 @@
+---
+title: "PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy"
+subtitle: "Catálogo de fuentes de datos e información sobre natalidad en la provincia de Jujuy"
+author: "Mg. Ing. Juan Manuel Solís"
+date: today
+lang: es
+---
+
+## Resumen
+
+Este documento es un compilado provisorio de las fuentes de datos de nacimientos de la provincia de Jujuy (y sus departamentos) empleables para estimar la demanda educativa por nivel, relevadas a la fecha, y que están disponibles en catálogos y páginas oficiales. El mismo se enmarca en el Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy, desarrollado de manera conjunta entre la Dirección de Análisis Estratégico de Datos y Difusión de la Información Educativa (dependiente de la Subsecretaría de Información y Evaluación Educativa, Secretaría de Educación, ámbito nacional) y la Dirección de Planeamiento, Información y Evaluación Educativa (dependiente de la Secretaría de Planeamiento Estratégico del Ministerio de Educación de la Provincia de Jujuy).
+
+Cada sección corresponde a una fuente o carpeta de datos, e incluye: metadata de la fuente y un enlace de descarga.
+
+
+```{r}
+#| label: setup
+#| echo: false
+
+library(dplyr)
+library(readxl)
+library(DT)
+library(glue)
+
+source("prep_data.R")
+```
+
+---
+
+## Anuarios Estadísticos DIPEC
+
+::: {.source-card}
+```{r}
+#| label: meta-dipec
+#| echo: false
+fuente_card(
+  nombre    = "Anuarios Estadísticos DIPEC",
+  organismo = "Dirección Provincial de Estadística y Censos (Jujuy)",
+  cobertura = "Niveles de agregación para la variable 'nacidos vivos'
+1. Por departamento de residencia
+   - Total General
+   - Cochinoca
+   - El Carmen
+   - Dr. Manuel Belgrano
+   - Humahuaca
+   - Ledesma
+   - Palpalá
+   - Rinconada
+   - San Antonio
+   - San Pedro
+   - Santa Bárbara
+   - Santa Catalina
+   - Susques
+   - Tilcara
+   - Tumbaya
+   - Valle Grande
+   - Yavi
+   - Total Provincial
+   - Otras Provincias
+   - Otros Países
+2. Por sexo
+   - Mujeres
+   - Varones
+3. Por local de ocurrencia
+   - Establecimiento público
+   - Establecimiento privado
+   - Vivienda
+   - Otros
+4. Por grupos de edad de la madre
+   - 10 a 14
+   - 15 a 19
+   - 20 a 24
+   - 25 a 29
+   - 30 a 34
+   - 35 a 39
+   - 40 a 44
+   - 45 y más",
+  variables = "Nacidos vivos",
+  enlace    = "https://dipec.jujuy.gob.ar/anuarios-estadisticos/"
+)
+```
+:::
+
+```{r}
+#| label: enlaces-dipec
+#| echo: false
+#| results: asis
+listar_enlaces("DATOS/ANUARIOS ESTADISTICOS DIPEC")
+```
+
+
+---
+
+## Nacidos Vivos — Argentina.gob.ar
+
+::: {.source-card}
+```{r}
+#| label: meta-nv-gobar
+#| echo: false
+fuente_card(
+  nombre    = "Nacidos Vivos — Argentina.gob.ar",
+  organismo = "Ministerio de Salud de la Nación, publicado en el Portal Nacional de Datos Públicos",
+  cobertura = "El organismo tiene 63 datasets publicados en el portal (categoría Salud). La cobertura
+temporal y geográfica exacta depende del/los dataset(s) puntuales de nacidos vivos que se
+descarguen del catálogo — revisar la ficha de cada dataset antes de importar.",
+  variables = "Nacidos vivos y estadísticas vitales asociadas (variables específicas según el
+dataset elegido dentro del catálogo del organismo)",
+  enlace    = "https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos"
+)
+```
+:::
+
+```{r}
+#| label: enlaces-nv-gobar
+#| echo: false
+#| results: asis
+listar_enlaces("DATOS/NACIDOS VIVOS - ARGENTINA GOB AR")
+```
+
+---
+
+## Nacidos Vivos — Salud
+
+::: {.source-card}
+```{r}
+#| label: meta-nv-salud
+#| echo: false
+fuente_card(
+  nombre    = "Nacidos Vivos — Estadísticas Vitales (DEIS)",
+  organismo = "Ministerio de Salud de la Nación — Dirección de Estadísticas e Información en Salud (DEIS)",
+  cobertura = "Anuario 'Estadísticas Vitales. Información Básica' (Serie 5), publicación anual desde
+1990. Desagregación habitual por jurisdicción de residencia de la madre (24 jurisdicciones,
+incluida Jujuy):
+- Edad de la madre
+- Nivel de instrucción de la madre
+- Intervalo de peso al nacer
+- Tiempo de gestación
+- Tipo de parto y sexo del nacido
+- Número de orden de nacido vivo
+Última edición disponible: Serie 5 N.º 67, Año 2023 (publicada en 2024).",
+  variables = "Nacidos vivos registrados; indicadores de natalidad, mortalidad infantil y materna",
+  enlace    = "https://datos.salud.gob.ar/dataset?tags=nacidos+vivos"
+)
+```
+:::
+
+```{r}
+#| label: enlaces-nv-salud
+#| echo: false
+#| results: asis
+# recursive = TRUE porque esta fuente tiene la subcarpeta "DEIS"
+listar_enlaces("DATOS/NACIDOS VIVOS - SALUD", recursive = TRUE)
+```
+
+---
+
+## Proyecciones INDEC
+
+::: {.source-card}
+```{r}
+#| label: meta-indec
+#| echo: false
+fuente_card(
+  nombre    = "Estimaciones y Proyecciones de Población, por sexo y grupos de edad",
+  organismo = "Instituto Nacional de Estadística y Censos (INDEC)",
+  cobertura = "Serie Análisis Demográfico N.º 40 (2025), basada en el Censo Nacional de Población,
+Hogares y Viviendas 2022. Estimaciones y proyecciones por jurisdicción (incluida Jujuy),
+sexo y grupos de edad, horizonte 2022-2040.",
+  variables = "Población estimada/proyectada por sexo, edad simple/quinquenal y jurisdicción",
+  enlace    = "https://www.indec.gob.ar/ftp/cuadros/publicaciones/proyecciones_nacionales_2022_2040.pdf"
+)
+```
+:::
+
+```{r}
+#| label: enlaces-indec
+#| echo: false
+#| results: asis
+listar_enlaces("DATOS/PROYECCIONES INDEC")
+```
+
+---
+
+## RENAPER
+
+::: {.source-card}
+```{r}
+#| label: meta-renaper
+#| echo: false
+fuente_card(
+  nombre    = "Nacimientos en Argentina (RENAPER)",
+  organismo = "Registro Nacional de las Personas (RENAPER) — Dirección Nacional de Población",
+  cobertura = "Uno de los 27 datasets abiertos publicados por la Dirección Nacional de Población del
+RENAPER en datos.gob.ar (categoría 'Nacimientos en Argentina'). Cobertura temporal y
+nivel de desagregación (jurisdicción/año) a confirmar en la ficha del dataset descargado.",
+  variables = "Nacimientos registrados a partir de la emisión de DNI, por jurisdicción y año",
+  enlace    = "https://www.argentina.gob.ar/interior/renaper/observatorio-poblacion/mapas-interactivos"
+)
+```
+:::
+
+```{r}
+#| label: enlaces-renaper
+#| echo: false
+#| results: asis
+listar_enlaces("DATOS/RENAPER")
+```
+
+---
+
+## Otras fuentes de información solicitadas
+
+- Cantidad de Nacimientos mensuales en la provincia de Jujuy, desagregado por departamento/localidad, durante el período 2004 - 2026 (hasta el 30 de junio de 2026). Información solicitada a la Dirección Provincial de Registro Civil.

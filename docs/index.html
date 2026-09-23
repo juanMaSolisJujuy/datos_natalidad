@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mg. Ing. Juan Manuel Solís">
+
+<title>PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy – Demanda Educativa Jujuy</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-04cee955d0fb3b713f3655d7fb98e7ca.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Demanda Educativa Jujuy</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link active" data-scroll-target="#resumen"><span class="header-section-number">1</span> Resumen</a></li>
+  <li><a href="#anuarios-estadísticos-dipec" id="toc-anuarios-estadísticos-dipec" class="nav-link" data-scroll-target="#anuarios-estadísticos-dipec"><span class="header-section-number">2</span> Anuarios Estadísticos DIPEC</a></li>
+  <li><a href="#nacidos-vivos-argentina.gob.ar" id="toc-nacidos-vivos-argentina.gob.ar" class="nav-link" data-scroll-target="#nacidos-vivos-argentina.gob.ar"><span class="header-section-number">3</span> Nacidos Vivos — Argentina.gob.ar</a></li>
+  <li><a href="#nacidos-vivos-salud" id="toc-nacidos-vivos-salud" class="nav-link" data-scroll-target="#nacidos-vivos-salud"><span class="header-section-number">4</span> Nacidos Vivos — Salud</a></li>
+  <li><a href="#proyecciones-indec" id="toc-proyecciones-indec" class="nav-link" data-scroll-target="#proyecciones-indec"><span class="header-section-number">5</span> Proyecciones INDEC</a></li>
+  <li><a href="#renaper" id="toc-renaper" class="nav-link" data-scroll-target="#renaper"><span class="header-section-number">6</span> RENAPER</a></li>
+  <li><a href="#otras-fuentes-de-información-solicitadas" id="toc-otras-fuentes-de-información-solicitadas" class="nav-link" data-scroll-target="#otras-fuentes-de-información-solicitadas"><span class="header-section-number">7</span> Otras fuentes de información solicitadas</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">PROYECTO: Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy</h1>
+<p class="subtitle lead">Catálogo de fuentes de datos e información sobre natalidad en la provincia de Jujuy</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mg. Ing. Juan Manuel Solís </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">22 de septiembre de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="resumen" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="resumen"><span class="header-section-number">1</span> Resumen</h2>
+<p>Este documento es un compilado provisorio de las fuentes de datos de nacimientos de la provincia de Jujuy (y sus departamentos) empleables para estimar la demanda educativa por nivel, relevadas a la fecha, y que están disponibles en catálogos y páginas oficiales. El mismo se enmarca en el Estudio de Proyección de Demanda Educativa en la Provincia de Jujuy, desarrollado de manera conjunta entre la Dirección de Análisis Estratégico de Datos y Difusión de la Información Educativa (dependiente de la Subsecretaría de Información y Evaluación Educativa, Secretaría de Educación, ámbito nacional) y la Dirección de Planeamiento, Información y Evaluación Educativa (dependiente de la Secretaría de Planeamiento Estratégico del Ministerio de Educación de la Provincia de Jujuy).</p>
+<p>Cada sección corresponde a una fuente o carpeta de datos, e incluye: metadata de la fuente y un enlace de descarga.</p>
+<hr>
+</section>
+<section id="anuarios-estadísticos-dipec" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="anuarios-estadísticos-dipec"><span class="header-section-number">2</span> Anuarios Estadísticos DIPEC</h2>
+<div class="source-card">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Anuarios Estadísticos DIPEC
+ Organismo: Dirección Provincial de Estadística y Censos (Jujuy)  
+Cobertura: Niveles de agregación para la variable 'nacidos vivos'
+1. Por departamento de residencia
+   - Total General
+   - Cochinoca
+   - El Carmen
+   - Dr. Manuel Belgrano
+   - Humahuaca
+   - Ledesma
+   - Palpalá
+   - Rinconada
+   - San Antonio
+   - San Pedro
+   - Santa Bárbara
+   - Santa Catalina
+   - Susques
+   - Tilcara
+   - Tumbaya
+   - Valle Grande
+   - Yavi
+   - Total Provincial
+   - Otras Provincias
+   - Otros Países
+2. Por sexo
+   - Mujeres
+   - Varones
+3. Por local de ocurrencia
+   - Establecimiento público
+   - Establecimiento privado
+   - Vivienda
+   - Otros
+4. Por grupos de edad de la madre
+   - 10 a 14
+   - 15 a 19
+   - 20 a 24
+   - 25 a 29
+   - 30 a 34
+   - 35 a 39
+   - 40 a 44
+   - 45 y más  
+Variables: Nacidos vivos  
+Sitio de descarga: (https://dipec.jujuy.gob.ar/anuarios-estadisticos/) </code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2012-Jujuy.pdf">Anuario-Estadistico-2012-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2013-Jujuy.pdf">Anuario-Estadistico-2013-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2019-Jujuy.pdf">Anuario-Estadistico-2019-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2020-Jujuy.pdf">Anuario-Estadistico-2020-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2021-Jujuy.pdf">Anuario-Estadistico-2021-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2022-Jujuy.pdf">Anuario-Estadistico-2022-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2023-Jujuy.pdf">Anuario-Estadistico-2023-Jujuy.pdf</a></li>
+<li><a href="DATOS/ANUARIOS ESTADISTICOS DIPEC/Anuario-Estadistico-2024-Jujuy.pdf">Anuario-Estadistico-2024-Jujuy.pdf</a></li>
+</ul>
+<hr>
+</section>
+<section id="nacidos-vivos-argentina.gob.ar" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="nacidos-vivos-argentina.gob.ar"><span class="header-section-number">3</span> Nacidos Vivos — Argentina.gob.ar</h2>
+<div class="source-card">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Nacidos Vivos — Argentina.gob.ar
+ Organismo: Ministerio de Salud de la Nación, publicado en el Portal Nacional de Datos Públicos  
+Cobertura: El organismo tiene 63 datasets publicados en el portal (categoría Salud). La cobertura
+temporal y geográfica exacta depende del/los dataset(s) puntuales de nacidos vivos que se
+descarguen del catálogo — revisar la ficha de cada dataset antes de importar.  
+Variables: Nacidos vivos y estadísticas vitales asociadas (variables específicas según el
+dataset elegido dentro del catálogo del organismo)  
+Sitio de descarga: (https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos) </code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/descnac.xlsx">descnac.xlsx</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb05.csv">nacweb05.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb06.csv">nacweb06.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb07.csv">nacweb07.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb08.csv">nacweb08.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb09.csv">nacweb09.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb10.csv">nacweb10.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb11.csv">nacweb11.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb12.csv">nacweb12.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb13.csv">nacweb13.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb14.csv">nacweb14.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb15.csv">nacweb15.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb16.csv">nacweb16.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb17.csv">nacweb17.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb18.csv">nacweb18.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb19.csv">nacweb19.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb20_0.csv">nacweb20_0.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb21_0.csv">nacweb21_0.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb22_0.csv">nacweb22_0.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb23.csv">nacweb23.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - ARGENTINA GOB AR/nacweb24.csv">nacweb24.csv</a></li>
+</ul>
+<hr>
+</section>
+<section id="nacidos-vivos-salud" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="nacidos-vivos-salud"><span class="header-section-number">4</span> Nacidos Vivos — Salud</h2>
+<div class="source-card">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Nacidos Vivos — Estadísticas Vitales (DEIS)
+ Organismo: Ministerio de Salud de la Nación — Dirección de Estadísticas e Información en Salud (DEIS)  
+Cobertura: Anuario 'Estadísticas Vitales. Información Básica' (Serie 5), publicación anual desde
+1990. Desagregación habitual por jurisdicción de residencia de la madre (24 jurisdicciones,
+incluida Jujuy):
+- Edad de la madre
+- Nivel de instrucción de la madre
+- Intervalo de peso al nacer
+- Tiempo de gestación
+- Tipo de parto y sexo del nacido
+- Número de orden de nacido vivo
+Última edición disponible: Serie 5 N.º 67, Año 2023 (publicada en 2024).  
+Variables: Nacidos vivos registrados; indicadores de natalidad, mortalidad infantil y materna  
+Sitio de descarga: (https://datos.salud.gob.ar/dataset?tags=nacidos+vivos) </code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/DEIS/serie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx">DEIS/serie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/DEIS/serie_5_nro_67_anuario_vitales_2023-version_final.pdf">DEIS/serie_5_nro_67_anuario_vitales_2023-version_final.pdf</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/nacidos-vivos-registrados-en-la-republica-argentina-entre-los-anos-2005-2022.csv">nacidos-vivos-registrados-en-la-republica-argentina-entre-los-anos-2005-2022.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/nacimientos2023.csv">nacimientos2023.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/nacimientos2024-.csv">nacimientos2024-.csv</a></li>
+<li><a href="DATOS/NACIDOS VIVOS - SALUD/serie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx">serie-historica-nacimientos-ocurridos-argentina-jurisdiccion-1914-2024_1.xlsx</a></li>
+</ul>
+<hr>
+</section>
+<section id="proyecciones-indec" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="proyecciones-indec"><span class="header-section-number">5</span> Proyecciones INDEC</h2>
+<div class="source-card">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Estimaciones y Proyecciones de Población, por sexo y grupos de edad
+ Organismo: Instituto Nacional de Estadística y Censos (INDEC)  
+Cobertura: Serie Análisis Demográfico N.º 40 (2025), basada en el Censo Nacional de Población,
+Hogares y Viviendas 2022. Estimaciones y proyecciones por jurisdicción (incluida Jujuy),
+sexo y grupos de edad, horizonte 2022-2040.  
+Variables: Población estimada/proyectada por sexo, edad simple/quinquenal y jurisdicción  
+Sitio de descarga: (https://www.indec.gob.ar/ftp/cuadros/publicaciones/proyecciones_nacionales_2022_2040.pdf) </code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="DATOS/PROYECCIONES INDEC/base_estimaciones_pob_deptos_2022_2035.csv">base_estimaciones_pob_deptos_2022_2035.csv</a></li>
+<li><a href="DATOS/PROYECCIONES INDEC/estimaciones_departamentos_2022_2035.xlsx">estimaciones_departamentos_2022_2035.xlsx</a></li>
+<li><a href="DATOS/PROYECCIONES INDEC/metadatos_estimaciones_deptos_2022_2035.pdf">metadatos_estimaciones_deptos_2022_2035.pdf</a></li>
+<li><a href="DATOS/PROYECCIONES INDEC/proyecciones_nacionales_2022_2040.pdf">proyecciones_nacionales_2022_2040.pdf</a></li>
+</ul>
+<hr>
+</section>
+<section id="renaper" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="renaper"><span class="header-section-number">6</span> RENAPER</h2>
+<div class="source-card">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Nacimientos en Argentina (RENAPER)
+ Organismo: Registro Nacional de las Personas (RENAPER) — Dirección Nacional de Población  
+Cobertura: Uno de los 27 datasets abiertos publicados por la Dirección Nacional de Población del
+RENAPER en datos.gob.ar (categoría 'Nacimientos en Argentina'). Cobertura temporal y
+nivel de desagregación (jurisdicción/año) a confirmar en la ficha del dataset descargado.  
+Variables: Nacimientos registrados a partir de la emisión de DNI, por jurisdicción y año  
+Sitio de descarga: (https://www.argentina.gob.ar/interior/renaper/observatorio-poblacion/mapas-interactivos) </code></pre>
+</div>
+</div>
+</div>
+<ul>
+<li><a href="DATOS/RENAPER/Nacimientos en Argentina por provincia y edad de la madre (2012 -2024).csv">Nacimientos en Argentina por provincia y edad de la madre (2012 -2024).csv</a></li>
+<li><a href="DATOS/RENAPER/nacimientos_por_departamento_y_anio_2012_2022.csv">nacimientos_por_departamento_y_anio_2012_2022.csv</a></li>
+<li><a href="DATOS/RENAPER/nacimientos_por_departamento_y_anio_2012_2024.csv">nacimientos_por_departamento_y_anio_2012_2024.csv</a></li>
+</ul>
+<hr>
+</section>
+<section id="otras-fuentes-de-información-solicitadas" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="otras-fuentes-de-información-solicitadas"><span class="header-section-number">7</span> Otras fuentes de información solicitadas</h2>
+<ul>
+<li>Cantidad de Nacimientos mensuales en la provincia de Jujuy, desagregado por departamento/localidad, durante el período 2004 - 2026 (hasta el 30 de junio de 2026). Información solicitada a la Dirección Provincial de Registro Civil.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,15 @@
+/* Estilos académicos mínimos — ajustar a identidad UNJu/FCA si se desea */
+.source-card {
+  border-left: 4px solid #2c3e50;
+  background: #f8f9fa;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1.2em;
+  border-radius: 4px;
+}
+.source-card table {
+  margin-bottom: 0;
+}
+h2 {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.3em;
+}
